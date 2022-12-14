@@ -1,0 +1,104 @@
+* body {
+  margin: 0px;
+}
+
+#app{
+  width: 100%;
+}
+
+header{
+  background-color: black;
+  height: auto}
+
+main{
+  background-color: black;
+  height: auto;
+}
+
+.carousel-item {
+  padding-top: 45px;
+  background-color: black;
+  padding-bottom: 100px;
+ }
+
+ h2{
+  margin-bottom: 2rem;
+ }
+
+ h1{
+  display: flex;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 5vmin;
+  font-weight: 300;
+  animation: netflix_style 4.5s;
+  outline: none;
+  white-space: nowrap;
+  color: red;
+}
+
+  @keyframes netflix_style {
+    0% {
+      text-shadow: makelongshadow(100,1);
+      color:#f3f3f3;
+      transform: scale(1.5, 1.5);
+    }
+    10% {
+      text-shadow: makelongshadow(100,1.5);
+      color:#f3f3f3;
+      transform: scale(1.5, 1.5);
+    }
+    15% {
+       color:#f3f3f3;
+    }
+    20% {    
+      color:#e90418;
+      text-shadow: none;
+      transform: scale(1.1, 1.1);
+    }
+    50% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0;    
+      color:#e90418;
+      transform: scale(0.85, 0.9);
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+
+ p{
+  color: white;
+ }
+
+ span {
+  color: white;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+
+ ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 3rem;
+  row-gap: 4rem;
+ }
+
+ li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ a{
+  transition: all 0.3s;
+ }
+
+ a:hover{
+  transform: scale(1.15);
+ }
